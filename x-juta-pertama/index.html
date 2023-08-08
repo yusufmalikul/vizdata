@@ -213,7 +213,7 @@
 
             if (!isNaN(startAge) && !isNaN(savingPerMonth) && !isNaN(accumulatedTarget)) {
                 const result = Math.ceil(startAge + (accumulatedTarget / (savingPerMonth * 12)));
-		    resultOutput.textContent = `Jika setiap bulan kamu menabung sebesar ${(formatIDR(savingPerMonth))} sejak umur ${startAge} tahun maka kamu akan memiliki tabungan sebesar ${formatIDR(accumulatedTarget)} pada umur ${result} tahun.`;
+		    resultOutput.textContent = `Jika kamu menabung ${formatIDR(savingPerMonth)} setiap bulan sejak usia ${startAge} tahun, maka pada usia ${result} tahun, kamu akan memiliki tabungan sebesar ${formatIDR(accumulatedTarget)}.`;
             } else {
                 resultOutput.textContent = '';
             }
